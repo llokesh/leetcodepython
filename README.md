@@ -6,3 +6,4 @@ The repo has the solutions to the Easy to Medium leet code problems
 4. Determines if the word is a valid palindrome or not
 5. Adds the sum of 2 lists
 6. Removes duplicate elements in a sorted list
+7. Determines if the number is a valid palindrome or not

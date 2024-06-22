@@ -41,12 +41,14 @@ def containsNearDuplicate(nums: list[int], k:int) -> int:
         for R in range(len(nums)):
         # Check if window is too large
             if R - L  > k:
+                # Remove the element on the left pointer and increment the left pointer to allow the comparison only within that specific window
                 hashSet.remove(nums[L])
                 L += 1
             if nums[R] in hashSet:
                 return True
             else:
                 hashSet.add(nums[R])
+        return False
 
 print(containsNearDuplicate([1,2,3,1],3))
 print(containsNearDuplicate([1,0,1,1],1))
